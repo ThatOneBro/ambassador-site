@@ -3,7 +3,7 @@ address: 4326 Richmond Ave, Houston, TX 77027
 phone: (713) 877-9394
 
 pages:
-  Home: '/'
+  Home: index
   About: about
   Menu: menu
   Location: location
