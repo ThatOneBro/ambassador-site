@@ -1,0 +1,24 @@
+<div class="space-medium">
+	<div class="container">
+		<div class="row">
+			{% for category in site.data.global.menu %}
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<div class="menu-block mb60">
+						<div class="menu-head">
+							<h2 class="menu-title" style="text-align: center">{{ category.name }}</h2>
+						</div>
+						<div class="menu-list container">
+							<ul class="listnone">
+								<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+									{% for item in category.items %}
+										<li>{{ item.name }}<span class="meta-price pull-right">${{ item.price }}0</span></li>
+									{% endfor %}
+								</div>
+							</ul>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>

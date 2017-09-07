@@ -94,7 +94,7 @@
 })(jQuery);
 
  $("#navigation").menumaker({
-   title: "Menu",
+   title: "Navigation",
    format: "multitoggle"
 });
 

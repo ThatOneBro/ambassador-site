@@ -1,0 +1,37 @@
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
+				<div class="footer-widget mb30">
+					<h2 class="footer-title">About Restaurant</h2>
+					<p>We at Ambassador are dedicated to providing authentic Chinese food at an affordable price, without sacrificing the ambience and the original Chinese feel.</p>
+					<div class="footer-social mb60">
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+				<div class="footer-widget footer-contact mb30">
+					<h2 class="footer-title">Contact Info</h2>
+					<ul class="listnone">
+						<li><i class="fa fa-map-marker" style="margin-left: -15px;"></i>
+							<p style="margin-left: -10px;">{{ site.data.global.address }}</p>
+						</li>
+						<li><i class="fa fa-phone" style="margin-left: -15px;"></i>
+							<p style="margin-left: -10px;">{{ site.data.global.phone }}</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+				<div class="footer-widget mb30">
+					<h2 class="footer-title">Quick Links</h2>
+					<ul class="listnone">
+						{% for page in site.data.global.pages %}
+							<li><a href="{{ page[1] }}">{{ page[0] }}</a></li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

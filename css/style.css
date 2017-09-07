@@ -242,7 +242,8 @@ label { }
 .bg-white { background-color: #fff; }
 .outline { border: 1px solid #e5e7ec; }
 .section-title { margin-bottom: 60px; color: #212330; letter-spacing:2px; text-transform:uppercase; }
-.section-title h1{ margin-bottom: 10px;}
+.section-title h1 h2{ margin-bottom: 10px;}
+.section-heading { font-size: 30px; }
 .section-title h5{ color:#7d7f89;}
 .title { color: #212330; }
 .text-white { color: #fff; }
@@ -340,20 +341,20 @@ label { }
 
 
 .top-header { background-color:#c11727; font-size:12px; color:#f7d0d3; padding-top:8px; padding-bottom:8px;line-height: 12px;}
-.top-social{}
-.top-social ul{}
+.top-social{ }
+.top-social ul{ }
 .top-social ul li{ float:left; margin-right:10px;}
 .top-social ul li a{ color:#df979e;  font-size:20px;}
 .top-social ul li a:hover{ color:#fff;}
 .top-text{text-align: right;}
 .top-text .text-block{padding-left: 20px;color:#fff;    line-height: 18px;}
-.call-block{}
-.call-no{}
-.mail-block{}
-.mail-text{}
-.time-block{}
-.time-text{}
-.call-block, .mail-block, .time-block{  }
+.call-block{ }
+.call-no{ }
+.mail-block{ }
+.mail-text{ }
+.time-block{ }
+.time-text{ }
+.call-block, .mail-block, .time-block{ }
 .call-block i, .mail-block i, .time-block i{ }
 
 
@@ -366,6 +367,7 @@ label { }
 .hero-text { font-size: 16px; color: #fff; margin-bottom: 60px;   }
  
 .navigation { }
+
 #navigation, #navigation ul, #navigation ul li, #navigation ul li a, #navigation #menu-button { margin: 0; padding: 0; border: 0;
  list-style: none; line-height: 1; display: block; position: relative; -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -483,10 +485,14 @@ text-transform: uppercase; }
 
 .is-sticky .navigation{ background-color:#d41b2c;}
 
+li.nav-item > a { padding: -10px 0px; }
+
 /*----------------------------------------------
     5.4 Page Header
 ----------------------------------------------*/
-.page-header { background: url(../images/page-header.jpg) no-repeat center; background-size: cover; margin: 0; border-bottom: none; padding-bottom:0px; }
+
+.page-header.menu-header { background: url(../images/menu-header.png) no-repeat center; }
+.page-header { background: url(../images/page-header.png) no-repeat center; background-size: cover; margin: 0; border-bottom: none; padding-bottom:0px; }
 .page-caption { padding: 140px 0px; position: relative; z-index: 1; color:#fff; }
 .page-title { color: #fff; text-align: left; font-size: 40px; text-transform:uppercase; font-weight:600; }
 .breadcrumb { }
@@ -503,7 +509,7 @@ text-transform: uppercase; }
 /*-----------------------------------
 8. Footer 
 -------------------------------------*/
-.footer { background-color: #0f0f11; padding-top:100px; padding-bottom:100px; }
+.footer { background-color: #0f0f11; padding-top:100px; padding-bottom:150px; }
 .footer-title { margin-bottom: 40px; color: #fff; text-transform: uppercase; font-size: 20px; line-height: 32px; }
 .footer-widget { }
 .footer-widget ul { }
@@ -605,7 +611,7 @@ text-transform: uppercase; }
 .testimonial-text { font-size: 16px; color: #7d7f89; line-height: 30px; font-weight: 500; margin-bottom: 25px;
  font-style: italic; margin-bottom:40px; }
 .testimonial-name { color: #212330; font-size: 13px; font-weight: 600; line-height: 32px; letter-spacing:2px; text-transform:uppercase; }
-.testimonial-meta { color: #d41b2c; font-size: 11px; margin-left: 13px; margin-bottom: 0px; text-transform:uppercase; letter-spacing:2px; }
+.testimonial-meta { color: #d41b2c; font-size: 11px; margin-bottom: 0px; text-transform:uppercase; letter-spacing:2px; }
 
 /*-------------------------
   9.8 Contact us
@@ -615,7 +621,7 @@ text-transform: uppercase; }
 .contact-block ul li{  border:1px solid #f1f2f4; padding-top:30px; padding-bottom:30px;}
 .contact-block ul li i{ color:#d41b2c; float:left; padding:0px;  }
 .contact-block .contact-text{  }
-
+.contact-wrapper{ padding-bottom: 35px;}
 
 
 
@@ -625,7 +631,11 @@ text-transform: uppercase; }
 .contact-info li:last-child { border-bottom: none; }
 .contact-info li i { display: block; position: absolute; left: 0; /* font-size: 50px; */ /* text-align: center; */ 
 color: #fff; /* bottom: 0px; */ }
+
+
 .map { height: 400px; }
+.maps-wrapper { padding: 35px 0px; }
+
 .contact-social { text-align: center; }
 .contact-social { }
 .contact-social a i { height: 32px; width: 32px; border-radius: 50px; background-color: #ffe2de; text-align: center; padding: 7px; line-height: 1.2; font-size: 14px; color: #c12d17; }
@@ -869,7 +879,7 @@ search-query:focus + button {z-index: 3;}
 /*-------------menu-------------*/
 .menu-block{}
 .menu-head { border-bottom: 1px solid #e6e6e6;  margin-bottom: 20px;  padding-bottom: 19px;}
-.menu-title{ text-transform:uppercase; font-size:20px; color:#212330; margin-left:80px; line-height:55px;  }
+.menu-title{ text-transform:uppercase; font-size:20px; color:#212330; line-height:55px; text-align: center;}
 .menu-icon{}
 .menu-head .menu-icon i{ float:left;}
 .menu-list{ color:#7d7f89; font-size:14px; font-style:italic; font-weight:600;}
@@ -954,13 +964,15 @@ opacity: .5; }
 /* Custom sizes (768px to 1024px) */
 @media screen and (max-width:768px) {
  .post-content{position: relative; width: 100%; right: 0px; top: 0px;}
-  
+ .footer-widget{ margin-bottom: 50px; }
+ .navigation { padding: 0px;}
+ .logo { padding: 5px 0px 15px; margin-left: 10px;}
+ .meta-price { margin-left: 10px; }
 }
 
 
 
 @media screen and (max-width:320px) {
-  
 }
 
 
