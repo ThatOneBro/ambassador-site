@@ -1,24 +1,33 @@
 <div class="space-medium">
-	<div class="container">
-		<div class="row">
+	<div class="container menu-page">
 			{% for category in site.data.global.menu %}
-				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-					<div class="menu-block mb60">
-						<div class="menu-head">
-							<h2 class="menu-title" style="text-align: center">{{ category.name }}</h2>
-						</div>
-						<div class="menu-list container">
-							<ul class="listnone">
-								<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-									{% for item in category.items %}
-										<li>{{ item.name }}<span class="meta-price pull-right">${{ item.price }}0</span></li>
-									{% endfor %}
-								</div>
-							</ul>
-						</div>
+				<div class="row">
+					<div class="section-title text-center">
+						<h2 class="cat-name" id="{{ category.short }}">{{ category.name }}</h2>
 					</div>
+					{% for item in category.items %}
+						<div class="col-sm-12 col-md-6 menu-item">
+							<div class="menu-heading">
+								<h3 class="item-name">{{ item.name }}</h3>
+								<span class="item-pricing">
+									{% if item.price.Small %}
+										<p class="item-price">Small: {{ item.price.Small | money }}</P>
+										{% if item.price.Medium %}
+											<p class="item-price">Medium: {{ item.price.Medium | money }}</P>
+										{% endif %}
+										<p class="item-price">Large: {{ item.price.Large | money }}</P>
+									{% elsif item.price.Half %}
+										<p class="item-price">Half: {{ item.price.Half | money }}</P>
+										<p class="item-price">Whole: {{ item.price.Whole | money }}</P>
+									{% else %}
+										<p class="item-price">{{ item.price | money }}</p>
+									{% endif %}
+								</span>
+							</div>
+							<p class="item-desc">{{ item.description }}</p>
+						</div>
+					{% endfor %}
 				</div>
 			{% endfor %}
-		</div>
 	</div>
 </div>

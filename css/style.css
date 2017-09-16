@@ -249,6 +249,7 @@ label { }
 .text-white { color: #fff; }
 .primary-sidebar { }
 .secondary-sidebar { }
+.mission-title { margin-top: 80px; }
 
 /*--------------------------------
 4.5 Features Block 
@@ -491,7 +492,7 @@ li.nav-item > a { padding: -10px 0px; }
     5.4 Page Header
 ----------------------------------------------*/
 
-.page-header.menu-header { background: url(../images/menu-header.png) no-repeat center; }
+.page-header.menu-header { background: url(../images/menu-header.png) no-repeat center; background-size: cover; margin: 0; border-bottom: none; padding-bottom:0px;}
 .page-header { background: url(../images/page-header.png) no-repeat center; background-size: cover; margin: 0; border-bottom: none; padding-bottom:0px; }
 .page-caption { padding: 140px 0px; position: relative; z-index: 1; color:#fff; }
 .page-title { color: #fff; text-align: left; font-size: 40px; text-transform:uppercase; font-weight:600; }
@@ -968,6 +969,7 @@ opacity: .5; }
  .navigation { padding: 0px;}
  .logo { padding: 5px 0px 15px; margin-left: 10px;}
  .meta-price { margin-left: 10px; }
+ .footer { padding-bottom: 10px; }
 }
 
 

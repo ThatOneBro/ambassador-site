@@ -18,7 +18,7 @@
 								{% for item in category.items %}
 										<li>
 											<div class="col-md-10">{{ item.name }}</div>
-											<span class="meta-price">${{ item.price }}0</span>
+											<span class="meta-price">{{ item.price | money }}</span>
 										</li>
 								{% endfor %}
 							</ul>

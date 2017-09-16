@@ -2,6 +2,7 @@
 address: 4326 Richmond Ave, Houston, TX 77027
 phone: (713) 877-9394
 
+#All pages on the site and their hyperlinks
 pages:
   Home: index
   About: about
@@ -9,50 +10,564 @@ pages:
   Location: location
   Order: https://houston.eat24hours.com/ambassador/2011
 
+#About page content
+about:
+    history:
+        We have been serving authentic Chinese food in the Houston area for over 20 years. 
+        Many of our patrons have been coming into our restaurant for years and keep coming back because of our dedication to service.
+    mission:
+        We are dedicated to providing the best traditional Chinese food in Houston, made with only the freshest ingredients.
+        Our goal is to be your ambassador and give you the most authentic Chinese food experience you can find in the area.
+        
+
+        
+#   Menus:
+#
+#   shortmenu is what is displayed on the homepage
+#   menu is the full menu which is shown on the menu pages
+#
+#   **ALL PRICES SHOULD BE STORED WITHOUT DECIMAL, eg. 350 will display $3.50, etc.**
+
 shortmenu:
   - 
-        name: 'Appetizers' 
+        name: Appetizers
         items: 
-          - {name: 'Egg Rolls (2 Pcs)', price: 3.50}
-          - {name: 'Chinese Oven Ribs', price: 6.00}
-          - {name: 'Fried Wontons (12 Pcs)', price: 5.00}
-          - {name: 'Steamed Shrimp Dumplings (6 Pcs)', price: 7.00}
+          - {name: 'Egg Rolls (2 Pcs)', price: 350}
+          - {name: 'Chinese Oven Ribs', price: 600}
+          - {name: 'Fried Wontons (12 Pcs)', price: 500}
+          - {name: 'Steamed Shrimp Dumplings (6 Pcs)', price: 700}
   - 
-        name: 'Entrees' 
+        name: Entrees
         items:
-          - {name: 'Mongolian Beef', price: 12.50}
-          - {name: 'Mandarin Beef', price: 12.50}
-          - {name: 'Szechuan Sauteed Shredded Beef', price: 12.50}
-          - {name: 'Sweet and Sour Chicken', price: 12.00}
-          - {name: 'Kung Pao Chicken', price: 12.00}
-          - {name: 'Mu-Shu Shrimp', price: 14.00}
+          - {name: 'Mongolian Beef', price: 1250}
+          - {name: 'Mandarin Beef', price: 1250}
+          - {name: 'Szechuan Sauteed Shredded Beef', price: 1250}
+          - {name: 'Sweet and Sour Chicken', price: 1200}
+          - {name: 'Kung Pao Chicken', price: 1200}
+          - {name: 'Mu-Shu Shrimp', price: 1400}
   - 
-        name: 'Dessert' 
+        name: Dessert
         items:
-          - {name: 'Peking Glazed Apple', price: 6.50}
-          - {name: 'Peking Glazed Banana', price: 6.50}
-          - {name: 'Chilled Lychee', price: 4.50}
-          - {name: 'Cheesecake', price: 3.50}
+          - {name: 'Peking Glazed Apple', price: 650}
+          - {name: 'Peking Glazed Banana', price: 650}
+          - {name: 'Chilled Lychee', price: 450}
+          - {name: 'Cheesecake', price: 350}
 
 menu:
   - 
-        name: 'Appetizers' 
-        items: 
-          - {name: 'Egg Rolls (2 Pcs)', price: 3.50}
-          - {name: 'Chinese Oven Ribs', price: 6.00}
-          - {name: 'Fried Wontons (12 Pcs)', price: 5.00}
-          - {name: 'Steamed Shrimp Dumplings (6 Pcs)', price: 7.00}
+    name: "Appetizers"
+    short: "appetizers"
+    items: 
+      - 
+        name: "Egg Rolls (2 Pcs)"
+        price: 350
+        description: "Hand-made, filled with vegetables and chicken."
+      - 
+        name: "Large Shrimp Egg Rolls (2 Pcs)"
+        price: 500
+        description: "Hand-made, filled with vegetables and shrimp."
+      - 
+        name: "Chinese Oven Ribs"
+        price: 600
+        description: "Marinated in our special BBQ sauce."
+      - 
+        name: "Edamame"
+        price: 500
+        description: "Steamed edamame with a dash of salt."
+      - 
+        name: "Fried Wontons (12 Pcs)"
+        price: 500
+        description: "12 pieces."
+      - 
+        name: "Pan-Fried Pork (6 Pcs)"
+        price: 500
+        description: "6 pieces. Comes with vegetable dumplings or side of vegetables."
+      - 
+        name: "Steamed Pork (6 Pcs)"
+        price: 500
+        description: "6 pieces. Comes with vegetable dumplings or side of vegetables."
+      - 
+        name: "Steamed Shrimp Dumplings (6 Pcs)"
+        price: 700
+        description: "6 pieces."
+      - 
+        name: "Crab Puffs (6 Pcs)"
+        price: 500
+        description: "Wontons wrapped with cream cheese and crab meat."
+      - 
+        name: "Tidbit Plate"
+        price: 900
+        description: "Sample plate with Chinese ovn ribs, crabpuffs, eggroll, fried shrimp, and fried wontons."
+      - 
+        name: "Special Salad"
+        price: 
+          Small: 1300
+          Large: 1600
+        description: "House specialty salad with shrimp, BBQ pork, and vegetables, served with a spicy peanut sauce."
+      - 
+        name: "Szechuan Spicy Cold Noodle"
+        price: 900
+        description: "Szechuan style noodles served with vegetables in a peanut sauce."
+      - 
+        name: "Chicken Lettuce Wrap"
+        price: 900
+        description: "Seared minced chicken, mushroom, green onion, water chestnut served with cool, crisp lettuce cups."
   - 
-        name: 'Beef' 
-        items:
-          - {name: 'Mongolian Beef', price: 12.50}
-          - {name: 'Mandarin Beef', price: 12.50}
-          - {name: 'Szechuan Sauteed Shredded Beef', price: 12.50}
+    name: "Soups"
+    short: "soups"
+    items: 
+      - 
+        name: "Hot and Sour Soup"
+        price: 
+          Small: 300
+          Medium: 500
+          Large: 700
+        description: null
+      - 
+        name: "Egg Drop Soup"
+        price: 300
+        description: null
+      - 
+        name: "Chinese Vegetable Soup"
+        price: 300
+        description: null
+      - 
+        name: "Wonton Soup"
+        price: 700
+        description: null
+      - 
+        name: "Corn Chicken Soup"
+        price: 400
+        description: null
+      - 
+        name: "Sizzling Rice Soup For 2"
+        price: 550
+        description: null
+      - 
+        name: "House Special Soup For 2"
+        price: 900
+        description: null
+      - 
+        name: "Special Wonton Soup"
+        price: 750
+        description: null
+      - 
+        name: "Mandarin Noodle Soup"
+        price: 1150
+        description: null
   - 
-        name: 'Dessert' 
-        items:
-          - {name: 'Peking Glazed Apple', price: 6.50}
-          - {name: 'Peking Glazed Banana', price: 6.50}
-          - {name: 'Chilled Lychee', price: 4.50}
-          - {name: 'Cheesecake', price: 3.50}
-          
+    name: "Beef"
+    short: "beef"
+    items: 
+      - 
+        name: "Beef with Broccoli and Water Chestnuts"
+        price: 1250
+        description: "Sliced flank steak, broccoli, baby bok choy and water chestnuts sauteed in brown sauce."
+      - 
+        name: "Pepper Steak"
+        price: 1250
+        description: "Beef sauteed in a brown sauce with bell peppers and onions."
+      - 
+        name: "Beef with Snow Peas"
+        price: 1250
+        description: "Sauteed with our house special brown sauce."
+      - 
+        name: "Teriyaki Steak"
+        price: 1300
+        description: "Pan-sauteed beef topped with our special terikyaki sauce."
+      - 
+        name: "Mongolian Beef"
+        price: 1250
+        description: "Sauteed beef in brown sauce with scallions served on bed of crispy rice noodles."
+      - 
+        name: "Mandarin Beef"
+        price: 1250
+        description: "Pan-sauteed strips of marinated flank steak prepared with scallions and onions."
+      - 
+        name: "Orange Beef"
+        price: 1250
+        description: "Lightly battered strips of flank steak served in a tangy zesty brown sauce."
+      - 
+        name: "Curry Beef"
+        price: 1250
+        description: "Stir-fried beef and vegetables served in a mild curry powder sauce."
+      - 
+        name: "Szechuan Sauteed Shredded Beef"
+        price: 1250
+        description: "Strips of beef sauteed with bamboo shoots, carrots, celery, and water chestnuts."
+      - 
+        name: "Asparagus Beef"
+        price: 1450
+        description: "Fresh steamed asparagus sauteed in brown sauce."
+      - 
+        name: "Three Delight Hunan Style"
+        price: 1500
+        description: "A medley of flank steak, chicken and shrimp sauteed in house special brown sauce."
+      - 
+        name: "Beef Chow Mein or Chop Suey"
+        price: 1250
+        description: "Flank steak with onions, celery, bamboo shoots and bean sprouts in a brown sauce."
+      - 
+        name: "Beef with Black Bean Sauce"
+        price: 1250
+        description: "Slices of flank steak sauteed with napa cabbage, onions and carrots in a house black bean sauce."
+  - 
+    name: "Chicken and Duck"
+    short: "poultry"
+    items: 
+      - 
+        name: "Moo Shu Chicken"
+        price: 1200
+        description: "Strips of chicken, egg, mushrooms and green onions served with hoisin sauce and warm pancakes."
+      - 
+        name: "Sweet and Sour Chicken"
+        price: 1200
+        description: "Chunks of chicken served with signature sweet and sour sauce with bell peppers and onions."
+      - 
+        name: "Black Mushroom Chicken"
+        price: 1350
+        description: "Chicken and black mushrooms served in a brown sauce."
+      - 
+        name: "Moo Goo Gai Pan"
+        price: 1200
+        description: "Steamed chicken breast served with snow peas, bok choy and mushrooms in a white wine sauce."
+      - 
+        name: "Lemon Chicken"
+        price: 1200
+        description: "Chunks of lightly battered chicken served with signature lemon sauce with bell peppers and onion."
+      - 
+        name: "Kung Pao Chicken"
+        price: 1200
+        description: "Stir-fried with peanuts, chili peppers and scallions."
+      - 
+        name: "Garlic Chicken"
+        price: 1200
+        description: "Steamed and served in a white wine garlic reduction sauce."
+      - 
+        name: "Curry Chicken"
+        price: 1200
+        description: "Chicken and sauteed vegetables served in a mild cuny powder sauce."
+      - 
+        name: "Chicken with Cashew Nuts"
+        price: 1250
+        description: "Served with a stir fried medley of vegetables and cashews."
+      - 
+        name: "Hunan Chicken"
+        price: 1200
+        description: "Hunan style spicy chicken served with celery, Cantonese bok choy and bamboo shoots."
+      - 
+        name: "Orange Chicken"
+        price: 1200
+        description: "Chunks of chicken sauteed in a zesty orange sauce."
+      - 
+        name: "Crazy Chicken"
+        price: 1200
+        description: "Lightly breaded chicken served with a chili flake house brown sauce."
+      - 
+        name: "Szechuan Shredded Chicken"
+        price: 1200
+        description: "Shredded chicken, celery, and carrots served in a brown spicy ginger garlic sauce."
+      - 
+        name: "Sesame Chicken"
+        price: 1200
+        description: "Lightly breaded chicken served with peppery house brown sauce."
+      - 
+        name: "Pine Nuts Chicken"
+        price: 1300
+        description: "Chunks of chicken, carrots, snow peas, nushrooms, and grilled pinenuts in ginger brown sauce."
+      - 
+        name: "Spicy Chicken"
+        price: 1200
+        description: "White breast chunks of chicken sauteed with jalapenos in a garlic brown sauce."
+      - 
+        name: "Chicken Chop Suey or Chow Mein"
+        price: 1200
+        description: "Chunks of chicken with onions, celery, bamboo shoots and bean sprouts in a white sauce."
+      - 
+        name: "Peking Duck"
+        price: 2800
+        description: "Roasted duck served with scallions, chopped cucumbers, and pancakes."
+      - 
+        name: "Crispy Duck"
+        price: 
+          Half: 1700
+          Whole: 2700
+        description: "Roasted and then lightly fried duck."
+  - 
+    name: "Seafood"
+    short: "seafood"
+    items: 
+      - 
+        name: "Scallops with Broccoli"
+        price: 1650
+        description: "Jumbo scallops steamed and sauteed in a white wine reduction sauce."
+      - 
+        name: "Shrimp with Broccoli"
+        price: 1400
+        description: "Served with broccoli in a white wine reduction sauce."
+      - 
+        name: "Hot Braised Prawns"
+        price: 1400
+        description: "Prawns sauteed with onions in a spicy and tangy tomato based sauce."
+      - 
+        name: "Black Pepper Shrimp"
+        price: 1400
+        description: "Grilled prawns stir-fried in a salt and pepper mix of chili peppers and scallions."
+      - 
+        name: "Shrimp with Baby Bok Chop"
+        price: 1400
+        description: "Shrimp and baby bok choy sauteed with garlic."
+      - 
+        name: "Shrimp with Cashew Nuts"
+        price: 1400
+        description: "Shrimp with Chinese vegetables sauteed in a white wine reduction sauce."
+      - 
+        name: "Scallops and Shrimp in Black Bean Sauce"
+        price: 1650
+        description: "Scallops and shrimp sauteed with napa cabbage, onions and carrots in a house black bean sauce."
+      - 
+        name: "Sweet and Sour Shrimp"
+        price: 1400
+        description: "Prawns served with signature sweet and sour sauce with bell peppers and onions."
+      - 
+        name: "Curry Shrimp"
+        price: 1400
+        description: "Shrimp and sauteed vegetables served in a mild curry powder sauce."
+      - 
+        name: "Hot Braised Fish"
+        price: 2600
+        description: "Lightly battered fish topped with a tangy spicy tomato based sauce."
+      - 
+        name: "Shrimp with Lobster Sauce"
+        price: 1500
+        description: "Sauteed shrimp with chicken breast, water chestnuts, black bean in a egg white wine."
+      - 
+        name: "Spicy Shrimp"
+        price: 1400
+        description: "Prawns sauteed with jalapenos in a garlic brown sauce."
+      - 
+        name: "Shrimp with Snow Peas"
+        price: 1400
+        description: "Steamed shrimp and snow peas sauteed in a white wine reduction sauce."
+      - 
+        name: "Asparagus Shrimp"
+        price: 1400
+        description: "Steamed shrimp and asparagus sauteed in a white wine reduction sauce."
+      - 
+        name: "Happy Family"
+        price: 1400
+        description: "Chicken, beef, shrimp, served in our house brown sauce and sauteed with mixed vegetables."
+      - 
+        name: "Mu-Shu Shrimp"
+        price: 1400
+        description: "Shrimp, egg, mushrooms and green onions served with hoisin sauce and warm pancakes."
+      - 
+        name: "Kung Pao Shrimp"
+        price: 1400
+        description: "Stir-fried with peanuts, chili peppers and scallions."
+      - 
+        name: "Walnut Shrimp"
+        price: 1400
+        description: "Cripsy shrimp served with honey-coated walnuts in a mayonnaise-based sauce."
+  - 
+    name: "Pork"
+    short: "pork"
+    items: 
+      - 
+        name: "Mu-Shu Pork"
+        price: 1200
+        description: "Strips of pork, egg, mushrooms and green onions served with hoisin sauce and warm pancakes."
+      - 
+        name: "Sauteed Shredded Pork"
+        price: 1200
+        description: "Sliced lean pork."
+      - 
+        name: "Twice Cooked Pork"
+        price: 1200
+        description: "Slices of BBQ pork, cabbage, and bell peppers sauteed in a spicy hoison sauce."
+      - 
+        name: "Szechung Shredded Pork"
+        price: 1200
+        description: "Strips of pork, bamboo shoots, celery, and carrots sauteed in a garlic brown spicy sauce."
+      - 
+        name: "BBQ Pork and Snow Peas"
+        price: 1200
+        description: "Slices of BBQ pork and snow peas sauteed in a brown sauce."
+      - 
+        name: "Sweet and Sour Pork"
+        price: 1200
+        description: "Tender pork loin served with signature sweet and sour sauce, bell peppers and onions."
+  - 
+    name: "Vegetarian"
+    short: "veg"
+    items: 
+      - 
+        name: "Spicy Eggplant"
+        price: 1100
+        description: "Chinese eggplant and water chestnuts, tossed in a spicy vegetarian sauce."
+      - 
+        name: "Sauteed Bean Sprouts"
+        price: 1100
+        description: "Steamed then sauteed beans sprouts wok-seared with chili flakes."
+      - 
+        name: "Sauteed Spicy String Beans"
+        price: 1100
+        description: "Wok-fried string beans served in a spicy garlic sauce."
+      - 
+        name: "Sauteed Mushroom, Snow Peas, Bamboo Shoots"
+        price: 1100
+        description: "Cooked in our house special brown sauce."
+      - 
+        name: "Sauteed Spicy Shredded Cabbage"
+        price: 1100
+        description: "Fresh cabbage sauteed with onions, garlic and red pepper flakes."
+      - 
+        name: "Vegetable Deluxe"
+        price: 1100
+        description: "Medley of Chinese vegetables sauteed in a white vegetable broth."
+      - 
+        name: "Chow Fen Si"
+        price: 1100
+        description: "Bean vermicelli sauteed with shredded vegetables."
+      - 
+        name: "Hot Bean Curd, Szechuan Style"
+        price: 1100
+        description: "Steamed tofu sauteed in a garlic, ginger and onion sauce."
+      - 
+        name: "Black Bean Sauce Tofu"
+        price: 1100
+        description: "Black bean sauteed with soft napa cabbage and tofu."
+      - 
+        name: "Sweet and Sour Cabbage"
+        price: 1100
+        description: "Cabbage sauteed with a sweet, tangy sauce with garlic."
+      - 
+        name: "Sauteed Baby Bok Choy"
+        price: 1100
+        description: "Steamed baby bok choy sauteed in garlic sauce."
+      - 
+        name: "Steamed Chinese Broccoli"
+        price: 1100
+        description: "Served with oyster sauce."
+      - 
+        name: "Crispy Tofu"
+        price: 1100
+        description: "Wok fired tofu served in shezuan saucet baby corn and water chestnuts."
+      - 
+        name: "Vegetable Manchurian"
+        price: 1150
+        description: "Vegetable balls served in a spicy vegetarian sauce."
+      - 
+        name: "Okra with Spicy Sauce"
+        price: 1150
+        description: "Lightly battered okra served with our spicy vegetarian sauce."
+  - 
+    name: "Egg Foo Young"
+    short: "egg-foo-half"
+    items: 
+      - 
+        name: "Egg Foo Young"
+        price: 1200
+        description: "Choice of vegetable, pork, chicken or beef, or shrimp (add $3.00)."
+  - 
+    name: "Steamed"
+    items: 
+      - 
+        name: "Steamed Chicken Breast with Chinese Vegetables"
+        price: 1200
+        description: null
+      - 
+        name: "Steamed Shrimp with Chinese Vegetables"
+        price: 1400
+        description: null
+      - 
+        name: "Steamed Chinese Vegetables"
+        price: 1100
+        description: null
+  - 
+    name: "Fried Rice and Noodles"
+    short: "rice-and-noodles"
+    items: 
+      - 
+        name: "Fried Rice"
+        price: 900
+        description: "Chicken, beef, pork, vegtable, or egg with bean sprouts, onions and green onions."
+      - 
+        name: "Combination or Shrimp Fried Rice"
+        price: 1000
+        description: "Egg fried rice, bean sprouts, green onions and onions with your choice of protein."
+      - 
+        name: "Lo Mein Beef or Chicken"
+        price: 1100
+        description: null
+      - 
+        name: "Shrimp Lo Mein"
+        price: 1250
+        description: null
+      - 
+        name: "Special Lo Mein"
+        price: 1350
+        description: null
+      - 
+        name: "Cantonese Pan Fried Noodles"
+        price: 1500
+        description: null
+  - 
+    name: "Dessert"
+    short: "dessert"
+    items: 
+      - 
+        name: "Glazed Lychee Fruit"
+        price: 650
+        description: null
+      - 
+        name: "Peking Glazed Apple"
+        price: 650
+        description: null
+      - 
+        name: "Peking Glazed Banana"
+        price: 650
+        description: null
+      - 
+        name: "Chilled Lychee"
+        price: 450
+        description: null
+      - 
+        name: "Vanilla Ice Cream"
+        price: 250
+        description: null
+      - 
+        name: "Green Tea Ice Cream"
+        price: 300
+        description: null
+      - 
+        name: "Cheesecake"
+        price: 350
+        description: null
+  - 
+    name: "Beverages"
+    short: "drinks"
+    items: 
+      - 
+        name: "Iced Tea"
+        price: 
+          Small: 275
+          Large: 350
+        description: null
+      - 
+        name: "Coffee"
+        price: 175
+        description: null
+      - 
+        name: "Hot Tea"
+        price: 175
+        description: null
+      - 
+        name: "Soda"
+        price: 175
+        description: null
+      - 
+        name: "Perrier Sparkling Water"
+        price: 175
+        description: null
+
